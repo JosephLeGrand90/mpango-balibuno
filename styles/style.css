@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.Slider{
+    width: 100%;
+    height: 80vh;
+    aspect-ratio: 16/9;
+    background-color: #000;
+    position: relative;
+}
+
+.Slider-background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    filter: brightness(50%);
+}
+.Slider-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*color: #fff;*/
+    text-align: center;
+}
+h1{
+    font-size: 5rem;
+    color: #fff;
+}
+
+h2{
+    font-size: 3rem;
+
+}
+p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.Slider-content p{
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.Section{
+    /*width: 100%;*/
+    padding: 100px 0;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;*/
+}
+.Boxed{
+    max-width:1200px;
+    margin-inline:auto;
+}
+.Flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.w40{
+    width: 40%;
+}
+
+.w60{
+    width: 60%;
+}
