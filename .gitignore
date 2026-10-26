@@ -1,0 +1,25 @@
+
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Dossiers locaux
+documentPdf/
+
+# Dépendances et fichiers temporaires
+node_modules/
+dist/
+.cache/
+*.log
+*.tmp
+
+# Fichiers système et éditeurs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,37 +1,443 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="FR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio BMJ</title>
+    <meta name="viewport" content="width=device-width" />
+    <title>Mpango Balibuno</title>
     <meta type="Description" content="Portfolio BMJ pro">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <div class = "Slider">
-    
-    <img src="img/slider.png" class="Slider-background">
+<header class="Header">
+    <div class="Boxed">
+        <div class="Header-inner">
 
-            <div class="Slider-content">
-                <h1>Mpango Balibuno</h1>
-                <p>Je suis un développeur logiciel junior</p>
+            <button
+                type="button"
+                class="Header-menu-mobile"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false"
+                aria-controls="navigation-principale"
+                onclick="ouvriMenu()"
+            >
+                <span class="material-icons">menu</span>
+            </button>
+
+            <a class="Header-logo" href="#accueil" aria-label="Accueil">
+                <img src="img/Logo_BMJ.png" alt="Logo de Mpango Balibuno">
+            </a>
+
+            <nav aria-label="Navigation principale">
+                <ul class="Header-menu" id="navigation-principale">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#realisation">Réalisations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
         </div>
-  </div>
+    </div>
+</header>
 
-  <div class="Section">
-        <div class="Boxed">
-            <div class="Flex">
-                    <div class="W40">
-                        <h2>À propos de moi</h2>
-                    </div>
-                    
-                    <div class="W60">
-                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie ut metus a condimentum. Curabitur elementum dapibus lacus nec commodo. Sed pellentesque eget risus et commodo. Ut vitae nibh convallis, viverra libero at, volutpat metus. Donec vitae placerat erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean tellus neque, dignissim ut ex nec, viverra vestibulum urna. Morbi quis convallis velit.</p>
-                    </div>
+<section class="Slider" id="accueil">
+
+    <img
+        src="img/slider.png"
+        class="Slider-background"
+        alt=""
+        aria-hidden="true"
+    >
+
+    <div class="Slider-content">
+
+        <p class="Slider-eyebrow">
+            DÉVELOPPEMENT INFORMATIQUE
+        </p>
+
+        <h1>Mpango Balibuno Joseph</h1>
+
+        <p class="Slider-description">
+            Concepteur et développeur junior,
+            passionné par la création de solutions informatiques.
+        </p>
+
+        <div class="Slider-actions">
+            <a href="#realisation" class="Slider-button">
+                Découvrir mes projets
+            </a>
+
+            <a href="#contact" class="Slider-button Slider-button-outline">
+                Me contacter
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="Section About" id="apropos">
+    <div class="Boxed">
+
+        <div class="About-heading">
+            <p class="About-eyebrow">QUI SUIS-JE ?</p>
+            <h2>À propos de moi</h2>
+            <div class="About-line"></div>
+        </div>
+
+        <div class="About-content">
+
+            <!-- PHOTOGRAPHIE -->
+            <div class="About-photo">
+                <img
+                    src="img/mpango.jpg"
+                    alt="Portrait professionnel de Mpango Balibuno Joseph"
+                    loading="lazy">
             </div>
+
+            <!-- PRÉSENTATION -->
+            <div class="About-description">
+                <p>
+                    Je suis informaticien, orienté vers la
+                    conception et le développement de
+                    solutions logicielles. J'aime transformer
+                    des besoins concrets en outils informatiques
+                    utiles et fiables.
+                </p>
+
+                <p>
+                    À travers mes projets, notamment en C++
+                    et avec Qt, je développe mes compétences
+                    en programmation, en conception d'interfaces
+                    et en structuration d'applications.
+                </p>
+
+                <p>
+                    Mon objectif est de continuer à apprendre,
+                    à concevoir des solutions bien pensées et
+                    à contribuer à des projets qui apportent
+                    une réelle valeur.
+                </p>
+            </div>
+
         </div>
-  </div>
+    </div>
+</section>
+
+<section class="Section dark Skills" id="competences">
+    <div class="Boxed-skill">
+
+        <div class="Skills-heading">
+            <p class="Skills-eyebrow">MON SAVOIR-FAIRE</p>
+            <h2>Mes compétences</h2>
+            <p class="Skills-intro">
+                Les technologies et les outils que j'utilise
+                pour concevoir et développer des solutions informatiques.
+            </p>
+        </div>
+
+        <div class="Skills-grid">
+
+            <article class="Skills-card">
+                <div class="Skills-icon">
+                    <span class="material-icons">code</span>
+                </div>
+                <h3>Programmation</h3>
+                <p>C++ · Python · JavaScript</p>
+            </article>
+
+            <article class="Skills-card">
+                <div class="Skills-icon">
+                    <span class="material-icons">desktop_windows</span>
+                </div>
+                <h3>Applications desktop</h3>
+                <p>Qt framework · CMake</p>
+            </article>
+
+            <article class="Skills-card">
+                <div class="Skills-icon">
+                    <span class="material-icons">web</span>
+                </div>
+                <h3>Développement web</h3>
+                <p>HTML · CSS · JavaScript</p>
+            </article>
+
+            <article class="Skills-card">
+                <div class="Skills-icon">
+                    <span class="material-icons">storage</span>
+                </div>
+                <h3>Bases de données</h3>
+                <p>SQL · SQLite · PostgreSQL · </p>
+            </article>
+
+            <article class="Skills-card">
+                <div class="Skills-icon">
+                    <span class="material-icons">build</span>
+                </div>
+                <h3>Outils de développement</h3>
+                <p>Git · GitHub · Qt Creator · Vs Code · JMerise · AnalyseSI </p>
+            </article>
+
+            <article class="Skills-card">
+                <div class="Skills-icon">
+                    <span class="material-icons">phone_android</span>
+                </div>
+                <h3>Développement mobile</h3>
+                <p>Flutter · Dart · Qt ·QML · C++</p>
+            </article>
+
+        </div>
+    </div>
+</section>
+<section class="Section Projects" id="realisation">
+  <div class="Boxed">
+        <div class="Projects-heading">
+            <p class="Projects-eyebrow">MON TRAVAIL</p>
+            <h2>Mes réalisations</h2>
+            <p class="Projects-intro">
+                Découvrez quelques projets que j'ai conçus
+                et développés au cours de mon parcours.
+            </p>
+        </div>
+
+        <div class="Projects-grid">
+
+            <!-- PROJET 1 -->
+            <article class="Project-card">
+                <div class="Project-image">
+                    <img src="img/logoJeton.png" alt="Interface du système de gestion des jetons" loading="lazy">
+                </div>
+
+                <div class="Project-content">
+                    <span class="Project-category">
+                        Application desktop
+                    </span>
+
+                    <h3>Système de gestion des jetons</h3>
+
+                    <p>
+                        Application de gestion des files
+                        d'attente avec appel vocal,
+                        gestion des services et
+                        sauvegarde des données.
+                    </p>
+
+                    <div class="Project-technologies">
+                        <span>C++</span>
+                        <span>Qt framework</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJET 2 -->
+            <article class="Project-card">
+                <div class="Project-image">
+                    <img src="img/logoMyCevb.jpg"
+                         alt="Aperçu du portfolio personnel"
+                         loading="lazy">
+                </div>
+
+                <div class="Project-content">
+                    <span class="Project-category">
+                        Application mobile
+                    </span>
+
+                    <h3>My CEVB</h3>
+
+                    <p>
+                        Une application mobile permettant
+                        la localisation de rassemblement
+                        de la CEVB la plus proche.
+                    </p>
+                    <div class="Project-technologies">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Php</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJET 3 -->
+            <article class="Project-card Boxed">
+                <div class="Project-image">
+                    <img src="img/Logo_BMJ.png"
+                         alt="Aperçu du portfolio personnel"
+                         loading="lazy">
+                </div>
+
+                <div class="Project-content">
+                    <span class="Project-category">
+                        Développement web
+                    </span>
+
+                    <h3>Mon portfolio personnel</h3>
+
+                    <p>
+                        Site web personnel permettant
+                        de présenter mon parcours,
+                        mes compétences et mes projets
+                        informatiques.
+                    </p>
+
+                    <div class="Project-technologies">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="Section Contact-section Skills dark" id="contact">
+    <div class="Boxed-contact">
+
+        <div class="Contact-heading">
+            <p class="Contact-eyebrow">RESTONS EN CONTACT</p>
+
+            <h2>Travaillons ensemble</h2>
+
+            <p class="Contact-intro">
+                Vous avez un projet, une opportunité
+                professionnelle ou une idée à partager ?
+                N'hésitez pas à me contacter.
+            </p>
+        </div>
+
+        <div class="Contact-grid">
+
+            <!-- EMAIL -->
+            <article class="Contact-card">
+                <div class="Contact-icon">
+                    <span class="material-icons">email</span>
+                </div>
+
+                <h3>Adresse e-mail</h3>
+                <p>Écrivez-moi directement</p>
+
+                <a href="mpangobalibuno@gmail.com">
+                    Envoyer un e-mail
+                    <span class="material-icons">arrow_forward</span>
+                </a>
+            </article>
+
+            <!-- GITHUB -->
+            <article class="Contact-card">
+                <div class="Contact-icon">
+                    <span class="material-icons">code</span>
+                </div>
+                <h3>GitHub</h3>
+                <p>Découvrez mes projets et mon code</p>
+                <a href="https://github.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Voir mon GitHub
+                    <span class="material-icons">arrow_forward</span>
+                </a>
+            </article>
+
+            <!-- LINKEDIN -->
+            <article class="Contact-card">
+                <div class="Contact-icon">
+                    <span class="material-icons">business_center</span>
+                </div>
+
+                <h3>LinkedIn</h3>
+                <p>Connectons-nous professionnellement</p>
+
+                <a href="https://www.linkedin.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Voir mon profil
+                    <span class="material-icons">arrow_forward</span>
+                </a>
+            </article>
+            <!-- FACEBOOK -->
+            <article class="Contact-card">
+                <div class="Contact-icon">
+                    <span class="material-icons">facebook</span>
+                </div>
+
+                <h3>Facebook</h3>
+                <p>Connectons-nous sur Facebook</p>
+
+                <a href="/" target="_blank" rel="noopener noreferrer">
+                    Voir mon profil
+                    <span class="material-icons">arrow_forward</span>
+                </a>
+            </article>
+            <!-- WhatsApp -->
+            <article class="Contact-card">
+                <div class="Contact-icon">
+                    <span class="material-icons">whatsapp</span>
+                </div>
+
+                <h3>WhatsApp</h3>
+                <p>Connectons-nous sur Facebook</p>
+
+                <a href="/" target="_blank" rel="noopener noreferrer">
+                    Voir mon profil
+                    <span class="material-icons">arrow_forward</span>
+                </a>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<footer class="Footer">
+    <div class="Boxed">
+
+        <div class="Footer-content">
+
+            <div class="Footer-brand">
+                <h3>Mpango Balibuno Joseph</h3>
+
+                <p>
+                    Concepteur et développeur informatique,
+                    passionné par les solutions numériques.
+                </p>
+            </div>
+
+            <nav class="Footer-links"
+                 aria-label="Navigation du pied de page">
+
+                <a href="#accueil">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#competences">Compétences</a>
+                <a href="#realisation">Réalisations</a>
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+        </div>
+
+        <div class="Footer-bottom">
+            <p>
+                &copy; <span id="current-year">2026</span>
+                Mpango Balibuno Joseph.
+                Tous droits réservés.
+            </p>
+
+            <a href="#accueil" class="Footer-top">
+                Retour en haut ↑
+            </a>
+        </div>
+
+    </div>
+</footer>
+
 </body>
 
-<script src="js/app.js"></script>
+<script src="js/app.js"  defer></script>
 </html>
