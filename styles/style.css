@@ -628,9 +628,9 @@ section[id] {
     }
  .wrap{
     flex-wrap: wrap;
-    }
+}
 .Flex{
-    display: flex;  
+    display: flex;
     }
 .dark{
     background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6));
